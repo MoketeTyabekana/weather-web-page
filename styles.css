@@ -1,66 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-background-color: rgb(233, 233, 233);
+body {
+  background-color: rgb(233, 233, 233);
 }
 
-.card{
-    width: 90%;
-    max-width: 470px;
-    background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
-    color: #ffffff;
-    margin: 100px auto 0;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-
+.card {
+  width: 90%;
+  max-width: 470px;
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  color: #ffffff;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 8px 8px 10px -10px rgba(0, 0, 0, 0.75);
 }
 
-.card .search{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-self: center;
+.card .search {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
 }
 
-.card .search input{
-    padding-left: 15px;
-    outline: 0;
-    border: 0;
-    height: 60px;
-    width: 80%;
-    color: black;
-    font-size: 1rem;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+.card .search input {
+  padding-left: 15px;
+  outline: 0;
+  border: 0;
+  height: 60px;
+  width: 80%;
+  color: black;
+  font-size: 1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
+.card .search button {
+  padding: 5px;
+  object-fit: cover;
+  background-color: #dedede;
+  outline: 0;
+  border: 0;
+  height: 60px;
+  width: 20%;
 
-
-.card .search button{
-    padding: 5px;
-    object-fit: cover;
-    background-color: #dedede;
-    outline: 0;
-    border: 0;
-    height: 60px;
-    width: 20%;
-    
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
-.card .search button img{
-    height: auto;
-    width: 30px;
+.card .search button img {
+  height: auto;
+  width: 30px;
 }
 
-span{
-    color: #ffdd00;
+span {
+  color: #ffdd00;
+}
+
+.weather-condition {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.weather-condition .weather-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.weather-condition .weather-detail img {
+  height: 50px;
+  width: 50px;
+}
+
+.weather-condition .weather-detail .humidity,
+.wind {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #ffdd00;
 }
